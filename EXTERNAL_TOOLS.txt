@@ -1,0 +1,1 @@
+AutoDock Vina: build f458505 (install separately: https://github.com/ccsb-scripps/AutoDock-Vina)
