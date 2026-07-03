@@ -1,0 +1,75 @@
+source,target,type,pathway_id
+TEAD4,YAP1- and WWTR1 (TAZ)-stimulated gene expression,in_pathway,R-HSA-2032785
+TEAD4,Generic Transcription Pathway,in_pathway,R-HSA-212436
+TEAD4,Co-inhibition by PD-1,in_pathway,R-HSA-389948
+TEAD4,Transcriptional regulation by RUNX3,in_pathway,R-HSA-8878159
+TEAD4,RUNX3 regulates YAP1-mediated transcription,in_pathway,R-HSA-8951671
+STAT3,Interleukin-6 signaling,in_pathway,R-HSA-1059683
+STAT3,BH3-only proteins associate with and inactivate an,in_pathway,R-HSA-111453
+STAT3,Interleukin-7 signaling,in_pathway,R-HSA-1266695
+STAT3,Signaling by SCF-KIT,in_pathway,R-HSA-1433557
+STAT3,Signaling by cytosolic FGFR1 fusion mutants,in_pathway,R-HSA-1839117
+MYC,Transcription of E2F targets under negative contro,in_pathway,R-HSA-1362277
+MYC,G0 and Early G1,in_pathway,R-HSA-1538133
+MYC,Degradation of beta-catenin by the destruction com,in_pathway,R-HSA-195253
+MYC,Signaling by ALK,in_pathway,R-HSA-201556
+MYC,TCF dependent signaling in response to WNT,in_pathway,R-HSA-201681
+CEBPB,Generic Transcription Pathway,in_pathway,R-HSA-212436
+CEBPB,Senescence-Associated Secretory Phenotype (SASP),in_pathway,R-HSA-2559582
+CEBPB,ATF4 activates genes in response to endoplasmic re,in_pathway,R-HSA-380994
+CEBPB,PERK regulates gene expression,in_pathway,R-HSA-381042
+CEBPB,Transcriptional regulation of white adipocyte diff,in_pathway,R-HSA-381340
+GATA3,Generic Transcription Pathway,in_pathway,R-HSA-212436
+GATA3,Ub-specific processing proteases,in_pathway,R-HSA-5689880
+GATA3,Interleukin-4 and Interleukin-13 signaling,in_pathway,R-HSA-6785807
+GATA3,Transcriptional regulation by RUNX1,in_pathway,R-HSA-8878171
+GATA3,ESR-mediated signaling,in_pathway,R-HSA-8939211
+FOXC1,Formation of intermediate mesoderm,in_pathway,R-HSA-9761174
+FOXC1,Formation of the ureteric bud,in_pathway,R-HSA-9830674
+NOD2,Toll Like Receptor 4 (TLR4) Cascade,in_pathway,R-HSA-166016
+NOD2,MyD88:MAL(TIRAP) cascade initiated on plasma membr,in_pathway,R-HSA-166058
+NOD2,MyD88-independent TLR4 cascade ,in_pathway,R-HSA-166166
+NOD2,Toll Like Receptor 9 (TLR9) Cascade,in_pathway,R-HSA-168138
+NOD2,Toll Like Receptor 10 (TLR10) Cascade,in_pathway,R-HSA-168142
+IFIH1,DDX58/IFIH1-mediated induction of interferon-alpha,in_pathway,R-HSA-168928
+IFIH1,Ub-specific processing proteases,in_pathway,R-HSA-5689880
+IFIH1,Ovarian tumor domain proteases,in_pathway,R-HSA-5689896
+IFIH1,TRAF3-dependent IRF activation pathway,in_pathway,R-HSA-918233
+IFIH1,TRAF6 mediated IRF7 activation,in_pathway,R-HSA-933541
+IL23R,Interleukin-4 and Interleukin-13 signaling,in_pathway,R-HSA-6785807
+IL23R,Interleukin-23 signaling,in_pathway,R-HSA-9020933
+TYK2,Interleukin-6 signaling,in_pathway,R-HSA-1059683
+TYK2,MAPK3 (ERK1) activation,in_pathway,R-HSA-110056
+TYK2,RAF-independent MAPK1/3 activation,in_pathway,R-HSA-112409
+TYK2,MAPK1 (ERK2) activation,in_pathway,R-HSA-112411
+TYK2,Adherens junctions interactions,in_pathway,R-HSA-418990
+RORC,Generic Transcription Pathway,in_pathway,R-HSA-212436
+RORC,Nuclear Receptor transcription pathway,in_pathway,R-HSA-383280
+RORC,Interleukin-4 and Interleukin-13 signaling,in_pathway,R-HSA-6785807
+RORC,Transcriptional regulation by RUNX3,in_pathway,R-HSA-8878159
+RORC,RUNX3 Regulates Immune Response and Cell Migration,in_pathway,R-HSA-8949275
+IL17A,Interleukin-17 signaling,in_pathway,R-HSA-448424
+IL17A,Interleukin-4 and Interleukin-13 signaling,in_pathway,R-HSA-6785807
+IL17A,SARS-CoV-2 activates/modulates innate and adaptive,in_pathway,R-HSA-9705671
+S100A9,ER-Phagosome pathway,in_pathway,R-HSA-1236974
+S100A9,Toll Like Receptor 4 (TLR4) Cascade,in_pathway,R-HSA-166016
+S100A9,MyD88:MAL(TIRAP) cascade initiated on plasma membr,in_pathway,R-HSA-166058
+S100A9,Toll Like Receptor TLR1:TLR2 Cascade,in_pathway,R-HSA-168179
+S100A9,Toll Like Receptor TLR6:TLR2 Cascade,in_pathway,R-HSA-168188
+DEFB4A,Beta defensins,in_pathway,R-HSA-1461957
+DEFB4A,Defensins,in_pathway,R-HSA-1461973
+DEFB4A,Antimicrobial peptides,in_pathway,R-HSA-6803157
+PI3,Antimicrobial peptides,in_pathway,R-HSA-6803157
+PI3,Keratinization,in_pathway,R-HSA-6805567
+PI3,Formation of the cornified envelope,in_pathway,R-HSA-6809371
+IL36G,Interleukin-36 pathway,in_pathway,R-HSA-9014826
+JAK1,Interleukin-6 signaling,in_pathway,R-HSA-1059683
+JAK1,MAPK3 (ERK1) activation,in_pathway,R-HSA-110056
+JAK1,RAF-independent MAPK1/3 activation,in_pathway,R-HSA-112409
+JAK1,MAPK1 (ERK2) activation,in_pathway,R-HSA-112411
+JAK1,ISG15 antiviral mechanism,in_pathway,R-HSA-1169408
+STAT1,Interleukin-6 signaling,in_pathway,R-HSA-1059683
+STAT1,ISG15 antiviral mechanism,in_pathway,R-HSA-1169408
+STAT1,Signaling by SCF-KIT,in_pathway,R-HSA-1433557
+STAT1,Signaling by cytosolic FGFR1 fusion mutants,in_pathway,R-HSA-1839117
+STAT1,FGFR1 mutant receptor activation,in_pathway,R-HSA-1839124

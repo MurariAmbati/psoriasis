@@ -1,0 +1,11 @@
+target,psoriasis_trials,any_trials,whitespace
+TEAD4,0,0,UNTESTED
+NOD2,0,9,UNTESTED
+IFIH1,0,1,UNTESTED
+RORC,0,1,UNTESTED
+MYC,0,90,UNTESTED
+STAT3,1,63,emerging
+IL23R,1,6,emerging
+JAK1,5,114,saturated
+TYK2,8,24,saturated
+IL17A,50,152,saturated

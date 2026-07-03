@@ -1,0 +1,62 @@
+target,chembl_target,molecule,name,role,moa,action,max_phase,pchembl,act_type,smiles,mw,qed
+TEAD4,CHEMBL4295828,CHEMBL6147038,,potent_bioactivity,,,,8.8,Ki,COCCOc1ccc(C(N)=O)c(-c2c(Cl)ccc3c2C[C@@](CNCCC2CCN(c4ccc5c(c4)C(=O)N(C4CCC(=O)NC4=O)C5=O)CC2)(c2ccccc2)O3)c1F,838.33,0.11
+TEAD4,CHEMBL4295828,CHEMBL5401444,,potent_bioactivity,,,,8.7,IC50,C=CC(=O)N1CC(c2nc(-c3ccc(OC(F)(F)F)cc3)c3ncn(C)c3n2)C1,403.36,0.63
+TEAD4,CHEMBL4295828,CHEMBL5422959,,potent_bioactivity,,,,8.7,IC50,C=CC(=O)N1CC(c2nc(-c3ccc(OC(F)(F)F)cc3)c3ncsc3n2)C1,406.39,0.62
+TEAD4,CHEMBL4295828,CHEMBL5400400,,potent_bioactivity,,,,8.7,IC50,Cn1cnc2c(-c3ccc(OC(F)(F)F)cc3)nc(C3CN(C(=O)C4=CCC4)C3)nc21,429.4,0.63
+TEAD4,CHEMBL4295828,CHEMBL5408536,,potent_bioactivity,,,,8.7,IC50,C=C(Cl)C(=O)NCc1nn(-c2ccc(OC(F)(F)F)cc2)c2nccc(CO)c12,426.78,0.59
+TEAD4,CHEMBL4295828,CHEMBL5403826,,potent_bioactivity,,,,8.7,IC50,C#CC(=O)NCc1nn(-c2ccc(OC(F)(F)F)cc2)c2nccc(CO)c12,390.32,0.65
+TEAD4,CHEMBL4295828,CHEMBL5419829,,potent_bioactivity,,,,8.52,IC50,C=CS(=O)(=O)NCc1cc(-c2ccc(OC(F)(F)F)cc2)c2c(c1CO)CCO2,429.42,0.71
+TEAD4,CHEMBL4295828,CHEMBL5416415,,potent_bioactivity,,,,8.52,IC50,C=CC(=O)NCc1cc(-c2ccc(OC(F)(F)F)cc2)c2ncn(C)c2c1C#CCO,429.4,0.48
+RORC,CHEMBL1741186,CHEMBL3545357,JTE-151,known_mechanism,Nuclear receptor ROR-gamma antagonist,ANTAGONIST,1.0,,,,,
+RORC,CHEMBL1741186,CHEMBL3109228,,potent_bioactivity,,,,8.52,IC50,CCS(=O)(=O)c1ccc(CC(=O)Nc2ccc3c(ccn3CCc3ccccc3)c2)cc1,446.57,0.42
+RORC,CHEMBL1741186,CHEMBL3109234,,potent_bioactivity,,,,8.4,IC50,CCS(=O)(=O)c1ccc(CC(=O)Nc2ccc3c(ccn3CCc3cccc(C(F)(F)F)c3)c2)cc1,514.57,0.32
+RORC,CHEMBL1741186,CHEMBL3109230,,potent_bioactivity,,,,8.4,IC50,CCS(=O)(=O)c1ccc(CC(=O)Nc2ccc3c(ccn3CCc3ccc(Cl)cc3)c2)cc1,481.02,0.36
+RORC,CHEMBL1741186,CHEMBL3109227,,potent_bioactivity,,,,8.3,IC50,CCS(=O)(=O)c1ccc(CC(=O)Nc2ccc3c(ccn3CCc3ccc(C(F)(F)F)cc3)c2)cc1,514.57,0.32
+RORC,CHEMBL1741186,CHEMBL3109329,,potent_bioactivity,,,,8.22,IC50,CCCN(Cc1ccc(NC(=O)Cc2ccc(S(=O)(=O)CC)cc2)cc1)Cc1ccc(C(F)(F)F)cc1,532.63,0.32
+RORC,CHEMBL1741186,CHEMBL3109324,,potent_bioactivity,,,,8.22,IC50,CCS(=O)(=O)c1ccc(CC(=O)Nc2ccc3c(ccn3CCc3ccc(Cl)c(Cl)c3)c2)cc1,515.46,0.31
+RORC,CHEMBL1741186,CHEMBL3109235,,potent_bioactivity,,,,8.22,IC50,CCS(=O)(=O)c1ccc(CC(=O)Nc2ccc3c(ccn3CCc3ccc(Cl)cc3Cl)c2)cc1,515.46,0.31
+RORC,CHEMBL1741186,CHEMBL3109233,,potent_bioactivity,,,,8.22,IC50,CCS(=O)(=O)c1ccc(CC(=O)Nc2ccc3c(ccn3CCc3ccccc3C(F)(F)F)c2)cc1,514.57,0.32
+TYK2,CHEMBL3553,CHEMBL4116008,CERDULATINIB,known_mechanism,Tyrosine-protein kinase TYK2 inhibitor,INHIBITOR,2.0,,,CCS(=O)(=O)N1CCN(c2ccc(Nc3ncc(C(N)=O)c(NC4CC4)n3)cc2)CC1,445.55,0.55
+TYK2,CHEMBL3553,CHEMBL4297477,BREPOCITINIB,known_mechanism,Tyrosine-protein kinase TYK2 inhibitor,INHIBITOR,3.0,,,Cn1cc(Nc2nccc(N3C[C@H]4CC[C@@H](C3)N4C(=O)[C@@H]3CC3(F)F)n2)cn1,389.41,0.86
+TYK2,CHEMBL3553,CHEMBL4459585,ROPSACITINIB,known_mechanism,Tyrosine-protein kinase TYK2 inhibitor,INHIBITOR,2.0,,,Cn1cc(-c2cn3nccc3c(-c3cnn([C@]4(CC#N)C[C@@H](C#N)C4)c3)n2)cn1,383.42,0.53
+TYK2,CHEMBL3553,CHEMBL4435170,DEUCRAVACITINIB,known_mechanism,Tyrosine-protein kinase TYK2 negative allosteric modulator,NEGATIVE ALLOSTERIC MODULATOR,4.0,,,[2H]C([2H])([2H])NC(=O)c1nnc(NC(=O)C2CC2)cc1Nc1cccc(-c2ncn(C)n2)c1OC,425.47,0.52
+TYK2,CHEMBL3553,CHEMBL3301607,FILGOTINIB,known_mechanism,Tyrosine-protein kinase TYK2 inhibitor,INHIBITOR,4.0,,,O=C(Nc1nc2cccc(-c3ccc(CN4CCS(=O)(=O)CC4)cc3)n2n1)C1CC1,425.51,0.67
+TYK2,CHEMBL3553,CHEMBL4298167,FILGOTINIB MALEATE,known_mechanism,Tyrosine-protein kinase TYK2 inhibitor,INHIBITOR,4.0,,,O=C(Nc1nc2cccc(-c3ccc(CN4CCS(=O)(=O)CC4)cc3)n2n1)C1CC1.O=C(O)/C=C\C(=O)O,541.59,0.67
+TYK2,CHEMBL3553,CHEMBL5315119,UPADACITINIB HEMIHYDRATE,known_mechanism,Tyrosine-protein kinase TYK2 inhibitor,INHIBITOR,4.0,,,CC[C@@H]1CN(C(=O)NCC(F)(F)F)C[C@@H]1c1cnc2cnc3[nH]ccc3n12.CC[C@@H]1CN(C(=O)NCC(F)(F)F)C[C@@H]1c1cnc2cnc3[nH]ccc3n12.O,778.76,0.73
+TYK2,CHEMBL3553,CHEMBL4594382,DEURUXOLITINIB PHOSPHATE,known_mechanism,Tyrosine-protein kinase TYK2 inhibitor,INHIBITOR,4.0,,,O=P(O)(O)O.[2H]C1([2H])C([C@@H](CC#N)n2cc(-c3ncnc4[nH]ccc34)cn2)C([2H])([2H])C([2H])([2H])C1([2H])[2H],412.42,0.8
+TYK2,CHEMBL3553,CHEMBL1789941,RUXOLITINIB,potent_bioactivity,,,4.0,9.3,Ki,N#CC[C@H](C1CCCC1)n1cc(-c2ncnc3[nH]ccc23)cn1,306.37,0.8
+TYK2,CHEMBL3553,CHEMBL21156,,potent_bioactivity,,,,9.0,IC50,CC(C)(C)c1nc2c3ccc(F)cc3c3c(=O)[nH]ccc3c2[nH]1,309.34,0.48
+TYK2,CHEMBL3553,CHEMBL495727,AT-9283,potent_bioactivity,,,2.0,9.0,IC50,O=C(Nc1c[nH]nc1-c1nc2ccc(CN3CCOCC3)cc2[nH]1)NC1CC1,381.44,0.54
+TYK2,CHEMBL3553,CHEMBL302449,GO-6976,potent_bioactivity,,,,8.5,Ki,Cn1c2ccccc2c2c3c(c4c5ccccc5n(CCC#N)c4c21)CNC3=O,378.44,0.49
+TYK2,CHEMBL3553,CHEMBL2152297,,potent_bioactivity,,,,8.38,Ki,C[C@@H]1CCN(C(=O)CC#N)C[C@@H]1n1cnc2cnc3[nH]ccc3c21,322.37,0.78
+TYK2,CHEMBL3553,CHEMBL221959,TOFACITINIB,potent_bioactivity,,,4.0,8.36,Ki,C[C@@H]1CCN(C(=O)CC#N)C[C@@H]1N(C)c1ncnc2[nH]ccc12,312.38,0.93
+TYK2,CHEMBL3553,CHEMBL2152300,,potent_bioactivity,,,,8.33,Ki,N#CCC(=O)N1CCC[C@@H](n2cnc3cnc4[nH]ccc4c32)C1,308.35,0.78
+TYK2,CHEMBL3553,CHEMBL1908395,,potent_bioactivity,,,,8.24,Kd,CN(C)CC(=O)N1CCC(c2ccc(NC(=O)c3nc(C#N)c[nH]3)c(C3=CCCCC3)c2)CC1.Cl,497.04,0.68
+NOD2,CHEMBL1293266,CHEMBL2107354,MIFAMURTIDE,known_mechanism,Nucleotide-binding oligomerization domain-containing protein 2 other,OTHER,4.0,,,CCCCCCCCCCCCCCCC(=O)OC[C@H](COP(=O)([O-])OCCNC(=O)[C@H](C)NC(=O)CC[C@@H](NC(=O)[C@H](C)NC(=O)[C@@H](C)O[C@H]1[C@H](O)[C@@H](CO)OC(O)[C@@H]1NC(C)=O)C(N)=O)OC(=O)CCCCCCCCCCCCCCC.O.[Na+],1277.51,
+NOD2,CHEMBL1293266,CHEMBL4781373,,potent_bioactivity,,,,9.0,IC50,CCCS(=O)(=O)Nc1cc(-c2cc(-c3ccc(N4CCNCC4)cc3)cnc2N)cc(OC)c1OC,511.65,0.4
+NOD2,CHEMBL1293266,CHEMBL4847211,,potent_bioactivity,,,,8.52,IC50,CCN(CC)CCOc1ccc(Nc2ncc3cc(-c4c(Cl)cccc4Cl)c(=O)n(CC(C)C)c3n2)cc1,554.52,0.22
+NOD2,CHEMBL1293266,CHEMBL4514780,,potent_bioactivity,,,,8.4,IC50,CC(C)(C)S(=O)(=O)c1cc2c(Nc3ccc4scnc4c3)ncnc2cc1OCCO,458.57,0.45
+NOD2,CHEMBL1293266,CHEMBL4853179,,potent_bioactivity,,,,8.4,IC50,CCN(CC)CCOc1ccc(Nc2ncc3cc(-c4ccccc4Cl)c(=O)n(C)c3n2)cc1,478.0,0.36
+NOD2,CHEMBL1293266,CHEMBL5180843,,potent_bioactivity,,,,8.35,EC50,CCOC(=O)CC[C@@H](NC(=O)[C@@H](NC(=O)CNC(=O)/C=C/c1ccc(OC(=O)CC23CC4CC(CC(C4)C2)C3)c(OC)c1)C(C)C)C(=O)OCC,711.85,0.12
+NOD2,CHEMBL1293266,CHEMBL6171851,,potent_bioactivity,,,,8.34,EC50,CCCC(=O)Oc1ccc(/C=C/C(=O)NCC(=O)N[C@H](C(=O)N[C@H](CCC(=O)OCC)C(=O)OCC)C(C)C)cc1OC,605.69,0.13
+NOD2,CHEMBL1293266,CHEMBL4870434,,potent_bioactivity,,,,8.3,IC50,CCN(CC)CCOc1ccc(Nc2ncc3cc(-c4ccc(O)cc4)c(=O)n(C)c3n2)cc1,459.55,0.39
+NOD2,CHEMBL1293266,CHEMBL4864576,,potent_bioactivity,,,,8.3,IC50,CCN(CC)CCOc1ccc(Nc2ncc3cc(-c4c(Cl)cccc4Cl)c(=O)n(Cc4cccc(S(C)(=O)=O)c4)c3n2)cc1,666.63,0.16
+IL17A,CHEMBL3390822,CHEMBL1743068,SECUKINUMAB,known_mechanism,Interleukin 17A inhibitor,INHIBITOR,4.0,,,,,
+IL17A,CHEMBL3390822,CHEMBL1743034,IXEKIZUMAB,known_mechanism,Interleukin 17A inhibitor,INHIBITOR,4.0,,,,,
+IL17A,CHEMBL3390822,CHEMBL2109469,AFASEVIKUMAB,known_mechanism,Interleukin 17A inhibitor,INHIBITOR,2.0,,,,,
+IL17A,CHEMBL3390822,CHEMBL2109470,PERAKIZUMAB,known_mechanism,Interleukin 17A inhibitor,INHIBITOR,2.0,,,,,
+IL17A,CHEMBL3390822,CHEMBL4297926,CJM-112,known_mechanism,Interleukin 17A binding agent,BINDING AGENT,2.0,,,,,
+IL17A,CHEMBL3390822,CHEMBL4297700,BIMEKIZUMAB,known_mechanism,Interleukin 17A inhibitor,INHIBITOR,4.0,,,,,
+IL17A,CHEMBL3390822,CHEMBL4298023,M-1095,known_mechanism,Interleukin 17A inhibitor,INHIBITOR,3.0,,,,,
+IL17A,CHEMBL3390822,CHEMBL4297863,REMTOLUMAB,known_mechanism,Interleukin 17A inhibitor,INHIBITOR,2.0,,,,,
+IL17A,CHEMBL3390822,CHEMBL4297686,IZOKIBEP,known_mechanism,Interleukin 17A inhibitor,INHIBITOR,3.0,,,,,
+IL17A,CHEMBL3390822,CHEMBL3990000,TIBULIZUMAB,known_mechanism,Interleukin 17A inhibitor,INHIBITOR,2.0,,,,,
+IL17A,CHEMBL3390822,CHEMBL4298102,VUNAKIZUMAB,known_mechanism,Interleukin 17A inhibitor,INHIBITOR,3.0,,,,,
+IL17A,CHEMBL3390822,CHEMBL5091495,,potent_bioactivity,,,,9.1,IC50,CC(F)(F)CNC(=O)[C@@H](CC(F)F)c1ccc2[nH]c([C@@H](NC(=O)c3nonc3C3CC3)C3CCC(F)(F)CC3)nc2c1F,618.55,0.23
+IL17A,CHEMBL3390822,CHEMBL4870813,,potent_bioactivity,,,,9.0,IC50,Cc1nonc1C(=O)N[C@H](c1nc2c(F)c([C@H](CC(F)(F)F)c3nnc4ccc(C#N)cn34)ccc2[nH]1)C1CCC(F)(F)CC1,631.54,0.22
+IL17A,CHEMBL3390822,CHEMBL5081660,,potent_bioactivity,,,,8.9,IC50,CNC(=O)[C@H](NC(=O)[C@@H](CC(F)(F)F)c1ccc2[nH]c([C@@H](NC(=O)c3nonc3C)C3CCC(F)(F)CC3)nc2c1F)C(C)C,645.61,0.23
+IL17A,CHEMBL3390822,CHEMBL5080633,,potent_bioactivity,,,,8.9,IC50,CC(F)(F)CNC(=O)C(CC(F)F)c1ccc2[nH]c([C@@H](NC(=O)c3nonc3C3CC3)C3CCC(F)(F)CC3)nc2c1F,618.55,0.23
+IL17A,CHEMBL3390822,CHEMBL5091603,,potent_bioactivity,,,,8.9,IC50,COC[C@H](C(=O)NCC(F)(F)F)c1ccc2[nH]c([C@@H](NC(=O)c3nonc3C3CC3)C3CCC(F)(F)CC3)nc2c1F,602.54,0.29
+IL17A,CHEMBL3390822,CHEMBL5077953,,potent_bioactivity,,,,8.8,IC50,CCc1nonc1C(=O)N[C@H](c1nc2c(F)c([C@H](CCS(=O)(=O)CC)C(=O)N3CC(F)(F)C(F)(F)C3)ccc2[nH]1)C1CCC(F)(F)CC1,710.67,0.27
+IL17A,CHEMBL3390822,CHEMBL5092697,,potent_bioactivity,,,,8.8,IC50,CC(F)(F)CNC(=O)[C@@H](CC(F)(F)F)c1ccc2[nH]c([C@@H](NC(=O)c3nonc3C3CC3)C3CCC(F)(F)CC3)nc2c1F,636.54,0.23
+IL17A,CHEMBL3390822,CHEMBL4860574,,potent_bioactivity,,,,8.7,IC50,Cc1nonc1C(=O)N[C@H](c1nc2c(F)c([C@H](CC(F)F)c3cnnn3CC(F)(F)F)ccc2[nH]1)C1CCC(F)(F)CC1,620.51,0.23

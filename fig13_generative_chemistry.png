@@ -1,0 +1,177 @@
+# Psoriasis Deep-Dive, Batch 2: Multi-Cohort Foundation, De Novo Chemistry, Causal Genetics & Rigor
+
+**Repository:** repression-os-v2 · disease pack MONDO_0005083_psoriasis
+**Scope:** This batch extends the first psoriasis deep-dive by (1) expanding to a 5-cohort meta-analysis,
+(2) constructing and docking a de novo TEAD4 chemical series, (3) adding causal-genetics (MR + PheWAS)
+efficacy/safety profiling, (4) a cross-validated biomarker panel + null-calibrated repurposing,
+(5) gene-regulatory and interaction networks, (6) a knowledge-graph + trial white-space overlay, and
+(7) a rigor pass with an honest-bounds ledger for every new construct.
+
+**Guiding principle (inherited from the platform):** honest negatives are first-class. Every claim below
+carries its bound; constructs that did not replicate are labeled as such.
+
+---
+
+## 1. Expanded data foundation — 5-cohort random-effects meta-analysis
+
+We expanded from 2 cohorts to **5 independent psoriasis cohorts spanning 2 platforms** (RNA-seq + Affymetrix
+U133Plus2), n=614 samples across differential-expression contrasts:
+
+| Cohort | Platform | Contrast (n) |
+|---|---|---|
+| GSE54456 | RNA-seq | 92 lesional vs 82 normal |
+| GSE121212 | RNA-seq | 28 PSO-lesional vs 38 control |
+| GSE13355 | Affy U133+2 | 58 lesional vs 64 normal |
+| GSE30999 | Affy U133+2 | 85 lesional vs 85 non-lesional |
+| GSE14905 | Affy U133+2 | 61 lesional vs 21 normal |
+
+A **DerSimonian–Laird random-effects meta-analysis** over 11,432 common genes yields **934 significant genes
+(505 up / 429 down)**, of which **886 are direction-concordant across all 5 cohorts**. The signature is
+recovered robustly: SERPINB4 (+8.6), S100A9 (+6.7), PI3 (+6.3), KRT16 (+3.7) up; and the differentiation-TF
+silencing program GATA3 (−1.44), FOXC1 (−1.34), GATA6 (−1.07), IRX1 (−0.97), TBX15 (−0.94), WNT2 (−0.88) down.
+
+**Bound:** median I²=95% — the effect *magnitude* varies substantially across platforms, but the *direction*
+is consistent (886/934 concordant), and 100/100 top genes are sign-stable to dropping any single cohort (§7).
+
+![Five-cohort meta-analysis]({{artifact:art_57a15a44-f0af-4e40-b8bc-d73e0c13a454}})
+
+---
+
+## 2. De novo TEAD4 chemical series
+
+The first batch identified **TEAD4** (the Hippo/YAP–TAZ transcriptional effector) as a druggable node with 45
+potent ChEMBL binders but **zero mechanism-anchored psoriasis drugs** — open white space. Here we *constructed*
+a novel series.
+
+**Method.** BRICS fragment recombination on the validated potent leads yielded too few compatible bonds
+(0 products), so we pivoted to **R-group enumeration on the validated core**: 8 aryl groups × 4 heterocyclic
+cores (9-methylpurine, 7-deazapurine, thienopyrimidine, pyrrolopyrimidine) × 4 linkers × 6 covalent-capable
+warheads = 768 combinations. After MW/logP/QED/HBD/HBA/PAINS filtering and a Tanimoto similarity ceiling
+(<0.85 to any parent), **388 novel drug-like designs** survived (all <0.7 similar to parents; QED 0.42–0.90).
+
+**Docking.** Designs were docked into the **validated 8CAA palmitate pocket** (AutoDock Vina; the pocket was
+validated in batch 1 by redocking the crystal ligand U3F to 1.00 Å RMSD). The best novel hit scores
+**−7.75 kcal/mol** (a 7-deazapurine–pyrrolidine–cyclobutenylamide, QED 0.82, only 0.38 similar to any parent),
+**beating the best parent lead (−7.05)**; 46 novel compounds beat the parent. Cyclobutenylamide and
+cyclopropanecarbonyl warheads give the strongest scores.
+
+**Bounds:** the docking run was CPU-only and complete — all 388 designs docked (best-mean core = 9Me-purine; best individual hits = 7-deazapurine + cyclobutenylamide). Critically, **all generated hits remain weaker than the validated crystal ligand (−9.18)** — they
+are viable *starting points*, not optimized drugs. No MD, free-energy perturbation, or synthesis was performed.
+GPU generative models (REINVENT, Boltz-2) were deferred (no remote compute available).
+
+![De novo TEAD4 chemistry]({{artifact:art_e7f35caf-62dc-4a43-a570-fe9d10624343}})
+
+---
+
+## 3. Causal genetics — Mendelian randomization + PheWAS
+
+**MR (limited).** We assembled cis-eQTL instruments from the eQTL Catalogue (GTEx skin + blood) for 10 lead
+targets. Only **NOD2** had a strong skin/blood cis-eQTL instrument (blood, 58 eQTLs, lead rs11645448
+β=−0.66, p=2.5×10⁻⁴⁴). The other 9 targets lacked significant cis-eQTLs in the available tissues even at
+p<10⁻³ — a genuine tissue-coverage limitation — and NOD2's eQTL lead SNP had no matched psoriasis GWAS-catalog
+row (LD-proxy harmonization is needed and the per-variant endpoint cannot do it), so **no single-SNP Wald MR
+was overstated**.
+
+**PheWAS (robust).** We pivoted to gene-level PheWAS (FinnGen R12, 2,470 endpoints), which covers all genes.
+This gives on-target **efficacy** and **safety** signals directly:
+
+- **On-target efficacy:** IL12B → Psoriasis (mlogp **42.7**, the strongest signal), TNFAIP3 → Psoriasis (20.5),
+  IFIH1 → psoriatic/autoimmune phenotypes.
+- **Safety/pleiotropy:** TYK2 has 58 significant endpoints including a statin/lipid liability (mlogp 57.7);
+  STAT3 (35), IL23R (32, IBD) are broadly pleiotropic.
+- **Mechanistically telling:** **TEAD4's top PheWAS hits are non-immune** (varicose veins, height) — consistent
+  with a differentiation/developmental node rather than an inflammatory one.
+
+**Bound:** PheWAS panel A shows direct psoriasis association within top-8 endpoints for only 3 targets (IL12B,
+TNFAIP3, IFIH1); this is gene-level best-variant PheWAS, not variant-specific MR.
+
+![PheWAS efficacy and safety]({{artifact:art_4fe0ef38-f349-496c-9505-647889275710}})
+
+---
+
+## 4. Cross-validated biomarker panel + null-calibrated repurposing
+
+**Biomarker panel.** L1-regularized logistic feature selection on meta-significant candidates, **trained on
+GSE13355 and tested on fully independent cohorts**, yields a compact **6-gene panel: ADAMDEC1, AKR1B10, BTC,
+PI3, S100A12, TCN1**. Honest held-out performance: **AUROC 0.806** (GSE14905, lesional vs normal) and **0.987**
+(GSE30999, lesional vs *non-lesional* — a harder within-patient contrast); permutation p=0.0005. Train
+resubstitution is 1.00 — the train/test gap directly demonstrates the committed pack's "optimistic AUROC"
+caveat and is reported transparently rather than hidden.
+
+**Repurposing rigor (honest negative).** The committed pack reported 50 LINCS L1000 reversing candidates with
+raw connectivity scores (top PLX-4032, −21.4) **and no null model**. Re-scoring the 23 reversing candidates
+against an empirical null, **0/23 survive FDR<0.05** (best CID755673 z=−2.53, emp-p=0.006 but FDR-adjusted
+p=0.13; PLX-4032 and clomiphene FDR p=0.64). The committed raw connectivity list is statistically
+indistinguishable from the null.
+
+![Biomarker panel and repurposing rigor]({{artifact:art_baa0d10f-56cf-4f9d-9292-9f5ae3a6b667}})
+
+---
+
+## 5. Networks — gene-regulatory + interaction expansion
+
+**Co-expression GRN** (GSE30999, n=170; |Spearman|>0.5): TEAD4 **anti-correlates with the entire
+differentiation-TF module** (FOXA1 −0.52, TBX3 −0.49, FOXC1 −0.47, GATA6 −0.43, GATA3 −0.33) and
+**positively correlates with the inflammatory program** (IL36G +0.63, S100A9 +0.55, SERPINB4 +0.54) and with
+regulators CEBPB (+0.68) and MYC (+0.40). TEAD4 sits precisely at the **differentiation/inflammation boundary**,
+replicating the batch-1 partial-correlation finding at the network level.
+
+**Interaction expansion** (IntAct, MI≥0.45): 296 binary interaction edges across 12 seeds. TEAD4's top partner
+is **YAP1 (MI 0.93)** — the canonical Hippo effector. Hidden nodes bridging ≥2 seeds (after keratin/noise
+filtering): **JAK1, STAT1, XIAP, TRIM27** — JAK1/STAT1 are druggable bridges linking the immune targets.
+
+![Networks]({{artifact:art_a44fa4e4-e021-4561-96c4-31a8a2233a57}})
+
+---
+
+## 6. Knowledge graph + trial white-space
+
+A target–pathway knowledge graph (Reactome v97; 72 nodes, 74 edges) places each target in its mechanistic
+context: TEAD4 → YAP/TAZ gene expression (Hippo); STAT3 → IL-6; NOD2 → TLR cascades; IL23R → IL-23 signaling;
+IFIH1 → interferon induction. Overlaying the **ClinicalTrials.gov landscape** quantifies white space:
+
+- **Saturated:** IL17A (50 psoriasis trials / 152 any-indication), TYK2 (8/24), JAK1 (5/114).
+- **Emerging:** STAT3 (1/63), IL23R (1/6).
+- **Untested in psoriasis:** **TEAD4 (0/0), RORC (0/1), IFIH1 (0/1), NOD2 (0/9), MYC (0/90)**.
+
+The **differentiation/Hippo axis (TEAD4, RORC) is therapeutically unexplored** — consistent with the thesis
+that this axis, not the saturated inflammatory axis, is where novelty lies.
+
+![Knowledge graph and trial white-space]({{artifact:art_ad052a06-2faa-4a32-ac66-1712018f1006}})
+
+---
+
+## 7. Rigor pass + honest-bounds ledger
+
+Four controls: (1) meta-signature leave-one-cohort-out — 100/100 top genes sign-stable; (2) biomarker
+permutation null — AUROC 0.806 vs 0.500±0.074, p=0.0005; (3) docking calibration — generated ≈ parent < crystal;
+(4) repurposing null — 0/23 survive FDR. The honest-bounds ledger rates all 11 constructs.
+
+**The single most important preserved bound:** TEAD4's discovery-cohort inflammation-independent silencing
+role (batch 1 partial r=−0.37) **did NOT replicate** in the second cohort (partial r flipped to +0.44). The
+TEAD4 hypothesis is therefore supported by *convergent* evidence — co-expression boundary position (§5),
+non-immune PheWAS profile (§3), Hippo/YAP1 interaction (§5), untested trial white-space (§6), and druggable
+pocket with a novel series (§2) — but the original cross-sample anti-correlation is **cohort-specific**, not
+established. It remains a well-motivated hypothesis, not a proven mechanism.
+
+![Rigor pass]({{artifact:art_6cbe55a6-3212-4554-9ebb-05ada9e11294}})
+
+---
+
+## Summary of novel constructs (this batch)
+
+| # | Construct | Status |
+|---|---|---|
+| 1 | 5-cohort meta-signature (934 genes, 886 concordant) | ROBUST |
+| 2 | 388-design de novo TEAD4 series; best docked −7.75 (beats parent) | SUPPORTED (starting points) |
+| 3 | PheWAS efficacy/safety (IL12B→PSO 42.7; TEAD4 non-immune) | ROBUST |
+| 4 | 6-gene biomarker panel (held-out AUROC 0.81/0.99) | SUPPORTED |
+| 5 | Repurposing rigor null (0/23 survive FDR) | HONEST NEGATIVE |
+| 6 | Co-expression GRN + IntAct expansion (JAK1/STAT1 bridges) | SUPPORTED / MECHANISTIC |
+| 7 | KG + trial white-space (TEAD4/RORC untested) | ROBUST (descriptive) |
+| 8 | Causal MR (only NOD2 instrumentable) | LIMITED |
+
+**Central thesis (carried from batch 1, strengthened here):** the *differentiation-silencing* axis is the more
+psoriasis-specific therapeutic opportunity (vs the inflammatory axis, largely shared with atopic dermatitis),
+and **TEAD4/Hippo is its most druggable, least-explored node** — with the explicit caveat that the core
+mechanistic claim is a cohort-specific hypothesis awaiting replication.

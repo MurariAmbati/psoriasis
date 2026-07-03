@@ -1,0 +1,44 @@
+target,role_target,molecule,name,drug_role,action,max_phase,smiles,mw,qed,pchembl
+DNMT1,maintenance methyltransferase (scar maintenance),CHEMBL1489,AZACITIDINE,known_mechanism,INHIBITOR,4.0,Nc1ncn([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)c(=O)n1,244.21,0.43,
+DNMT1,maintenance methyltransferase (scar maintenance),CHEMBL1201129,DECITABINE,known_mechanism,INHIBITOR,4.0,Nc1ncn([C@H]2C[C@H](O)[C@@H](CO)O2)c(=O)n1,228.21,0.53,
+DNMT1,maintenance methyltransferase (scar maintenance),CHEMBL3087498,,potent_bioactivity,,,CC(C)N(CCCNC(=O)Nc1ccc(C(C)(C)C)cc1)C[C@H]1O[C@@H](n2cc(Br)c3c(N)ncnc32)[C@H](O)[C@@H]1O,618.58,0.23,9.52
+DNMT1,maintenance methyltransferase (scar maintenance),CHEMBL6163134,,potent_bioactivity,,,CCN1C[C@H](NC(=O)c2cc3cc(Cl)ccc3[nH]2)[C@@H](OC)C1,321.81,0.91,8.74
+DNMT1,maintenance methyltransferase (scar maintenance),CHEMBL2171169,,potent_bioactivity,,,CC(C)N(CCCNC(=O)Nc1ccc(C(C)(C)C)cc1)C[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O,540.67,0.26,8.54
+DNMT1,maintenance methyltransferase (scar maintenance),CHEMBL83747,PSAMMAPLIN A,potent_bioactivity,,,O=C(NCCSSCCNC(=O)/C(Cc1ccc(O)c(Br)c1)=N/O)/C(Cc1ccc(O)c(Br)c1)=N/O,664.4,0.06,7.73
+DNMT3A,de novo methyltransferase,CHEMBL1489,AZACITIDINE,known_mechanism,INHIBITOR,4.0,Nc1ncn([C@@H]2O[C@H](CO)[C@@H](O)[C@H]2O)c(=O)n1,244.21,0.43,
+DNMT3A,de novo methyltransferase,CHEMBL1201129,DECITABINE,known_mechanism,INHIBITOR,4.0,Nc1ncn([C@H]2C[C@H](O)[C@@H](CO)O2)c(=O)n1,228.21,0.53,
+DNMT3A,de novo methyltransferase,CHEMBL4208004,,potent_bioactivity,,,COc1cc2c(NCC3CCN(C)CC3)cc(-c3ccc(C)o3)nc2cc1OCCCN1CCCC1,492.66,0.38,7.04
+DNMT3A,de novo methyltransferase,CHEMBL4091463,,potent_bioactivity,,,c1ccc2c(NCCNc3ncnc4cc(OCC5CCN(CCNc6ccnc7ccccc67)CC5)ccc34)cccc2c1,597.77,0.13,6.52
+DNMT3A,de novo methyltransferase,CHEMBL5285340,,potent_bioactivity,,,O=C(Nc1ccc(Nc2ccnc3ccccc23)cc1)c1cccc(Nc2ccnc3ccccc23)c1,481.56,0.23,6.1
+DNMT3A,de novo methyltransferase,CHEMBL2336409,,potent_bioactivity,,,Cc1cc(Nc2ccc(NC(=O)c3ccc(Nc4ccnc5ccccc45)cc3)cc2)nc(N)n1,461.53,0.26,6.05
+DNMT3B,de novo methyltransferase,CHEMBL418052,S-ADENOSYLHOMOCYSTEINE,potent_bioactivity,,,Nc1ncnc2c1ncn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O,384.42,0.35,6.7
+DNMT3B,de novo methyltransferase,CHEMBL555257,,potent_bioactivity,,,O=C(O)[C@@H]1C[C@H](SC[C@H]2O[C@@H](n3cnc4c(NCCc5ccc(-c6ccccc6)cc5)ncnc43)[C@H](O)[C@@H]2O)CN1,576.68,0.19,6.58
+DNMT3B,de novo methyltransferase,CHEMBL552309,,potent_bioactivity,,,Nc1ncnc2c1ccn2[C@@H]1O[C@H](CSCC[C@H](N)C(=O)O)[C@@H](O)[C@H]1O,383.43,0.38,6.52
+DNMT3B,de novo methyltransferase,CHEMBL557902,,potent_bioactivity,,,Nc1ncnc2c1ncn2[C@@H]1O[C@H](CS[C@@H]2CN[C@H](C(=O)O)C2)[C@@H](O)[C@H]1O,396.43,0.4,6.52
+EZH2,"H3K27me3 writer (PRC2, repressive)",CHEMBL4594260,TAZEMETOSTAT HYDROBROMIDE,known_mechanism,INHIBITOR,4.0,Br.CCN(c1cc(-c2ccc(CN3CCOCC3)cc2)cc(C(=O)NCc2c(C)cc(C)[nH]c2=O)c1C)C1CCOCC1,653.66,0.39,
+EZH2,"H3K27me3 writer (PRC2, repressive)",CHEMBL3287735,GSK2816126,known_mechanism,INHIBITOR,1.0,CC[C@H](C)n1cc(C)c2c(C(=O)NCc3c(C)cc(C)[nH]c3=O)cc(-c3ccc(N4CCNCC4)nc3)cc21,526.69,0.33,
+EZH2,"H3K27me3 writer (PRC2, repressive)",CHEMBL3287735,GSK2816126,potent_bioactivity,,1.0,CC[C@H](C)n1cc(C)c2c(C(=O)NCc3c(C)cc(C)[nH]c3=O)cc(-c3ccc(N4CCNCC4)nc3)cc21,526.69,0.33,9.3
+EZH2,"H3K27me3 writer (PRC2, repressive)",CHEMBL3911017,,potent_bioactivity,,,Cc1cc(C)c(CN2CCc3c(Cl)cc(-c4c(C)noc4C)c(Cl)c3C2=O)c(=O)[nH]1,446.33,0.63,9.15
+EZH2,"H3K27me3 writer (PRC2, repressive)",CHEMBL3414621,TAZEMETOSTAT,potent_bioactivity,,4.0,CCN(c1cc(-c2ccc(CN3CCOCC3)cc2)cc(C(=O)NCc2c(C)cc(C)[nH]c2=O)c1C)C1CCOCC1,572.75,0.39,9.0
+EZH2,"H3K27me3 writer (PRC2, repressive)",CHEMBL3605455,,potent_bioactivity,,,CCS(=O)(=O)N1CCC([C@@H](C)n2c(C)c(C(=O)NCc3c(C)cc(C)[nH]c3=O)c3ccccc32)CC1,512.68,0.5,9.0
+HDAC1,histone deacetylase (repressive),CHEMBL98,VORINOSTAT,known_mechanism,INHIBITOR,4.0,O=C(CCCCCCC(=O)Nc1ccccc1)NO,264.32,0.38,
+HDAC1,histone deacetylase (repressive),CHEMBL272980,MOCETINOSTAT,known_mechanism,INHIBITOR,2.0,Nc1ccccc1NC(=O)c1ccc(CNc2nccc(-c3cccnc3)n2)cc1,396.45,0.43,
+HDAC1,histone deacetylase (repressive),CHEMBL216641,,potent_bioactivity,,,COc1ccc2[nH]c(C)c(CC(=O)N[C@@H](CCCCCC(=O)NO)C(=O)NCCc3c(-c4ccccc4)[nH]c4ccccc34)c2c1,623.75,0.05,9.1
+HDAC1,histone deacetylase (repressive),CHEMBL327146,,potent_bioactivity,,,O=C(CCCCCC(C(=O)Nc1ccc2ncccc2c1)C(=O)Nc1ccc2ncccc2c1)NO,485.54,0.11,9.0
+HDAC1,histone deacetylase (repressive),CHEMBL116620,,potent_bioactivity,,,O=C(/C=C/c1cccc(C(C(=O)Nc2ccccc2)C(=O)Nc2ccccc2)c1)NO,415.45,0.2,9.0
+HDAC1,histone deacetylase (repressive),CHEMBL146250,FR-135313,potent_bioactivity,,-1.0,C/C=C1\NC(=O)[C@@H](CS)NC(=O)[C@@H](C(C)C)NC(=O)C[C@@H](/C=C/CCS)OC(=O)[C@H](C(C)C)NC1=O,542.72,0.13,8.8
+HDAC2,histone deacetylase,CHEMBL98,VORINOSTAT,known_mechanism,INHIBITOR,4.0,O=C(CCCCCCC(=O)Nc1ccccc1)NO,264.32,0.38,
+HDAC2,histone deacetylase,CHEMBL272980,MOCETINOSTAT,known_mechanism,INHIBITOR,2.0,Nc1ccccc1NC(=O)c1ccc(CNc2nccc(-c3cccnc3)n2)cc1,396.45,0.43,
+HDAC2,histone deacetylase,CHEMBL485514,,potent_bioactivity,,,O=C(C=C1c2ccccc2-c2ccccc21)NCCCCCC(=O)NO,350.42,0.26,9.1
+HDAC2,histone deacetylase,CHEMBL484073,,potent_bioactivity,,,O=C(/C=C/c1ccc2cccnc2c1)NCCCCCC(=O)NO,327.38,0.3,8.6
+HDAC2,histone deacetylase,CHEMBL484489,,potent_bioactivity,,,O=C(/C=C/c1ccc(Cl)cc1F)NCCCCCC(=O)NO,328.77,0.3,8.52
+HDAC2,histone deacetylase,CHEMBL490018,,potent_bioactivity,,,CC(/C=C/c1ccccc1)=C\C(=O)NCCCCCC(=O)NO,316.4,0.22,8.51
+KDM1A,LSD1 H3K4 demethylase (repressive at enhancers),CHEMBL4297289,BOMEDEMSTAT,known_mechanism,INHIBITOR,3.0,CN1CCN(C(=O)[C@H](CCCN[C@@H]2C[C@H]2c2ccc(F)cc2)NC(=O)c2ccc(-n3ccnn3)cc2)CC1,519.63,0.4,
+KDM1A,LSD1 H3K4 demethylase (repressive at enhancers),CHEMBL1797652,,potent_bioactivity,,,CC(C)C[C@H](NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CCCCN)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@@H]1CCCN1C(=O)[C@H](C)NC(=O)[C@H](CCCCN)NC(=O)CNC(=O)CNC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)[C@H](CCCCN)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](C)NC(=O)[C@@H](NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H](CCCCNN)NC(=O)[C@@H](NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](C)N)[C@@H](C)O)[C@@H](C)O)[C@@H](C)O)C(=O)N[C@@H](C)C(=O)O,2269.65,,8.36
+KDM1A,LSD1 H3K4 demethylase (repressive at enhancers),CHEMBL1938897,,potent_bioactivity,,,CC(NC1CC1c1ccccc1)c1ccc2c(c1)OCCO2,295.38,0.93,8.3
+KDM1A,LSD1 H3K4 demethylase (repressive at enhancers),CHEMBL3108901,,potent_bioactivity,,,CC(N[C@H]1C[C@@H]1c1ccccc1)c1ccc2c(c1)OCCO2,295.38,0.93,8.3
+KDM1A,LSD1 H3K4 demethylase (repressive at enhancers),CHEMBL1938898,,potent_bioactivity,,,CN1CCN(C(=O)CNC2CC2c2ccc(-c3cc(F)ccc3C(F)(F)F)cc2)CC1,435.47,0.73,8.05
+TET2,methylation eraser (agonize/restore),CHEMBL5527999,,potent_bioactivity,,,CC[C@H](C)[C@@H]1NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](Cc2ccc(O)cc2)NC(=O)CSC[C@H](C(=O)N[C@@H](Cc2ccc(O)cc2)C(=O)NCC(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](CCC(N)=O)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](CCCNC(=N)N)C(N)=O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2c[nH]cn2)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O,3322.82,,6.91
+TET2,methylation eraser (agonize/restore),CHEMBL5565375,,potent_bioactivity,,,CC[C@H](C)[C@@H]1NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](Cc2ccc(O)cc2)NC(=O)CSC[C@@H](C(=O)NC(=N)NCCC[C@H](N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](CCCNC(=N)N)C(=O)N[C@@H](CCCNC(=N)N)C(N)=O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2c[nH]cn2)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O,3186.68,,6.6
+TET2,methylation eraser (agonize/restore),CHEMBL4851104,,potent_bioactivity,,,C=C(CC(O)C(=O)O)C(=O)O,160.12,0.48,6.52
+TET2,methylation eraser (agonize/restore),CHEMBL3785455,,potent_bioactivity,,,N=C(N)NCCC[C@H](NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@@H](N)CCCNC(=N)N)C(=O)O,1267.53,,6.45

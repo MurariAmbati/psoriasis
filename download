@@ -1,0 +1,172 @@
+# Psoriasis ArtMethods Deep Discovery
+
+Deep psoriasis discovery report for `artmethods_method`. This is a real-data input and execution-readiness ledger, not a scientific result report.
+
+- Units: 202
+- Input rows: 5050
+- Matrix-bound executor-blocked rows: 528
+- Module abstention rows: 4500
+- Contrast-unavailable abstention rows: 22
+- Matrix-bound contrasts: 24
+- Report digest: `5b7241be283d2e1bbbe34708769bea6cbdbd90bbd2e88eff6e1e1cef143f5866`
+
+## Row States
+
+| Row state | Rows |
+| --- | ---: |
+| `contrast_matrix_unavailable_abstention` | 22 |
+| `matrix_bound_executor_blocked` | 528 |
+| `module_abstention_record` | 4500 |
+
+## Top Missing Modalities
+
+| Modality | Rows |
+| --- | ---: |
+| `survival` | 1450 |
+| `drug_response` | 1050 |
+| `mutation` | 825 |
+| `dependency` | 600 |
+| `proteomics` | 375 |
+| `subtype` | 325 |
+| `methylation` | 25 |
+| `chromatin` | 25 |
+
+## Top Blockers
+
+| Blocker | Rows |
+| --- | ---: |
+| method runtime is modality-gated and returns no promoted result | 3200 |
+| missing modalities: survival | 875 |
+| scientific executor release is absent | 550 |
+| matrix input is bound but matrix materialization is disabled | 528 |
+| result envelope, null, falsifier, and certificate targets are absent | 528 |
+| missing modalities: drug_response | 425 |
+| missing modalities: dependency | 275 |
+| requires non-disease committed substrate: structure | 250 |
+| missing modalities: proteomics | 225 |
+| missing modalities: drug_response, mutation | 200 |
+| missing modalities: mutation | 200 |
+| missing modalities: mutation, survival | 175 |
+
+## Matrix-Bound Contrasts
+
+| Accession | Contrast | Rows | Left | Right | Matrix status |
+| --- | --- | --- | --- | --- | --- |
+| GSE117239 | lesional_vs_nonlesional | 22 | 240 | 84 | contrast_matrix_ready_direct_gsm |
+| GSE117239 | pasi75_responder_vs_nonresponder | 22 | 231 | 93 | contrast_matrix_ready_direct_gsm |
+| GSE121212 | lesional_vs_nonlesional | 22 | 55 | 54 | contrast_matrix_ready_processed_bridge |
+| GSE121212 | lesional_vs_normal | 22 | 55 | 38 | contrast_matrix_ready_processed_bridge |
+| GSE121212 | psoriasis_vs_atopic_dermatitis | 22 | 55 | 54 | contrast_matrix_ready_processed_bridge |
+| GSE121212 | psoriasis_vs_healthy_or_normal | 22 | 55 | 38 | contrast_matrix_ready_processed_bridge |
+| GSE13355 | lesional_vs_nonlesional | 22 | 58 | 58 | contrast_matrix_ready_direct_gsm |
+| GSE13355 | lesional_vs_normal | 22 | 58 | 64 | contrast_matrix_ready_direct_gsm |
+| GSE13355 | psoriasis_vs_healthy_or_normal | 22 | 116 | 64 | contrast_matrix_ready_direct_gsm |
+| GSE14905 | lesional_vs_nonlesional | 22 | 33 | 28 | contrast_matrix_ready_direct_gsm |
+| GSE14905 | lesional_vs_normal | 22 | 33 | 21 | contrast_matrix_ready_direct_gsm |
+| GSE14905 | psoriasis_vs_healthy_or_normal | 22 | 61 | 21 | contrast_matrix_ready_direct_gsm |
+| GSE30999 | lesional_vs_nonlesional | 22 | 85 | 85 | contrast_matrix_ready_direct_gsm |
+| GSE34248 | lesional_vs_nonlesional | 22 | 14 | 14 | contrast_matrix_ready_direct_gsm |
+| GSE41662 | lesional_vs_nonlesional | 22 | 24 | 24 | contrast_matrix_ready_direct_gsm |
+| GSE53552 | baseline_or_predose_treatment_axis | 22 | 49 | 50 | contrast_matrix_ready_direct_gsm |
+| GSE53552 | lesional_vs_nonlesional | 22 | 75 | 24 | contrast_matrix_ready_direct_gsm |
+| GSE54456 | lesional_vs_normal | 22 | 92 | 82 | contrast_matrix_ready_processed_bridge |
+| GSE54456 | psoriasis_vs_healthy_or_normal | 22 | 92 | 82 | contrast_matrix_ready_processed_bridge |
+| GSE66511 | psoriasis_vs_healthy_or_normal | 22 | 24 | 12 | contrast_matrix_ready_processed_bridge |
+| GSE78097 | lesional_vs_nonlesional | 22 | 27 | 6 | contrast_matrix_ready_direct_gsm |
+| GSE78097 | mild_vs_severe_source_axis | 22 | 14 | 13 | contrast_matrix_ready_direct_gsm |
+| GSE78097 | psoriasis_vs_healthy_or_normal | 22 | 27 | 6 | contrast_matrix_ready_direct_gsm |
+| GSE85034 | lesional_vs_nonlesional | 22 | 29 | 29 | contrast_matrix_ready_direct_gsm |
+
+## Method Readiness Detail
+
+| Unit | Title | Bound | Abstain | Contrasts | Top missing |
+| --- | --- | --- | --- | --- | --- |
+| D1.1 | Per-cohort univariate Cox score test | 0 | 25 | 0 | survival |
+| D1.10 | Blast%/age/WBC continuous prognosis | 0 | 25 | 0 | drug_response, survival |
+| D1.11 | Spline (nonlinear) Cox | 0 | 25 | 0 | survival |
+| D1.12 | Competing-risks cause-specific hazard | 0 | 25 | 0 | survival |
+| D1.13 | Landmark / conditional survival | 0 | 25 | 0 | survival |
+| D1.14 | Accelerated-failure-time parametric | 0 | 25 | 0 | survival |
+| D1.15 | Copy-number-dosage prognosis | 0 | 25 | 0 | mutation, survival |
+| D1.16 | Single-CpG methylation prognosis | 0 | 25 | 0 | methylation, survival |
+| D1.17 | Immune-deconvolution cell-fraction prognosis | 0 | 25 | 0 | survival |
+| D1.18 | Splicing-PSI prognosis | 0 | 25 | 0 | survival |
+| D1.2 | Per-cohort Spearman hazard-surrogate screen | 0 | 25 | 0 | dependency |
+| D1.3 | Median-split log-rank | 0 | 25 | 0 | survival |
+| D1.4 | Tertile/quartile dose-response prognosis | 0 | 25 | 0 | drug_response, survival |
+| D1.5 | Time-dependent AUROC at 12/24/36 mo | 0 | 25 | 0 | survival |
+| D1.6 | Restricted-mean-survival-time difference | 0 | 25 | 0 | survival |
+| D1.7 | Firth-penalized Cox for sparse events | 0 | 25 | 0 | survival |
+| D1.8 | Mutation univariate prognosis (BeatAML) | 0 | 25 | 0 | drug_response, mutation, survival |
+| D1.9 | Protein univariate prognosis | 0 | 25 | 0 | proteomics, survival |
+| D10.1 | Label-permutation FDR calibration | 0 | 25 | 0 | drug_response, mutation |
+| D10.10 | E-value / unmeasured-confounding sensitivity | 24 | 1 | 24 |  |
+| D10.2 | Decoy-gene null (Cox screen) | 0 | 25 | 0 | dependency, survival |
+| D10.3 | Negative-control drug set | 0 | 25 | 0 | drug_response |
+| D10.4 | Stratified (within-subtype) null | 0 | 25 | 0 | subtype |
+| D10.5 | Platform-probe null | 0 | 25 | 0 |  |
+| D10.6 | Sign-randomization null (signatures) | 0 | 25 | 0 | survival |
+| D10.7 | Time-reversal null (survival) | 0 | 25 | 0 | survival |
+| D10.8 | Model-X knockoffs | 24 | 1 | 24 |  |
+| D10.9 | Permutation importance for ML models | 0 | 25 | 0 | survival |
+| D11.1 | Delta-controllability driver ranking | 0 | 25 | 0 |  |
+| D11.10 | Time-lagged (Granger) regulatory causality | 0 | 25 | 0 | survival |
+| D11.11 | Mediation / front-door decomposition | 0 | 25 | 0 | mutation |
+| D11.2 | Reachability of the mature state | 0 | 25 | 0 |  |
+| D11.3 | Releasability stiffness tensor | 0 | 25 | 0 | subtype |
+| D11.4 | Operator slow-mode <-> prognostic-axis alignment | 0 | 25 | 0 |  |
+| D11.5 | Interventional NOTEARS regulatory DAG | 0 | 25 | 0 | dependency |
+| D11.6 | Identifiability-budget ledger | 0 | 25 | 0 |  |
+| D11.7 | Mendelian-randomization-style expression->outcome | 0 | 25 | 0 | mutation, survival |
+| D11.8 | Invariant causal prediction across cohorts | 24 | 1 | 24 |  |
+| D11.9 | Counterfactual ex-vivo treatment effect | 0 | 25 | 0 | drug_response |
+| D12.1 | Clone-state-fitness decoupling (fiber bundle) | 0 | 25 | 0 |  |
+| D12.10 | Transcriptional-entropy stemness | 0 | 25 | 0 |  |
+| D12.11 | Bulk subclone deconvolution | 0 | 25 | 0 | mutation |
+| D12.12 | Diffusion-pseudotime branch detection | 0 | 25 | 0 | subtype |
+| D12.13 | Consensus trajectory conservation | 0 | 25 | 0 |  |
+| D12.2 | Pseudotime differentiation-block scoring | 0 | 25 | 0 |  |
+| D12.3 | Optimal-transport progression flow | 0 | 25 | 0 | mutation, survival |
+| D12.4 | Attractor-landscape reconstruction | 0 | 25 | 0 |  |
+| D12.5 | Persistent-homology of the state manifold | 0 | 25 | 0 |  |
+| D12.6 | Sheaf-consistency across modalities | 0 | 25 | 0 | mutation, proteomics |
+| D12.7 | MRD/relapse-clone forecasting | 0 | 25 | 0 | mutation |
+| D12.8 | Bulk progression meta (normal->MDS->AML->relapse) | 0 | 25 | 0 |  |
+| D12.9 | RNA-velocity transition directionality | 0 | 25 | 0 |  |
+| D13.1 | AML vs MM vs DLBCL dependency contrast | 0 | 25 | 0 | dependency, subtype |
+| D13.2 | Shared vs private prognostic genes | 0 | 25 | 0 |  |
+| D13.3 | Transfer-learning prognostic prior | 0 | 25 | 0 | survival |
+| D13.4 | MDS->AML transformation signature | 0 | 25 | 0 |  |
+| D13.5 | Pan-cancer drug-effect transfer | 0 | 25 | 0 | drug_response, subtype |
+| D13.6 | Normal-hematopoiesis reference contrast | 0 | 25 | 0 |  |
+| D13.7 | Pediatric vs adult AML transfer | 0 | 25 | 0 |  |
+| D13.8 | Pan-myeloid shared-axis map (AML/MDS/MPN) | 0 | 25 | 0 |  |
+| D13.9 | Lineage-priming axis transfer | 0 | 25 | 0 | subtype |
+| D14.1 | LSC17 reference C-index audit | 0 | 25 | 0 | survival |
+| D14.10 | Reproducibility-weighted target re-ranking | 0 | 25 | 0 |  |
+| D14.2 | Meta-signature vs LSC17 head-to-head | 0 | 25 | 0 | survival |
+| D14.3 | Published-signature winner's-curse predictor | 0 | 25 | 0 | survival |
+| D14.4 | Novelty adjudication vs known signatures | 24 | 1 | 24 |  |
+| D14.5 | Vs published SOTA C-index | 0 | 25 | 0 | survival |
+| D14.6 | Citation-weighted reproducibility map | 0 | 25 | 0 |  |
+| D14.7 | Effect-size funnel / small-study bias | 0 | 25 | 0 |  |
+| D14.8 | p-curve analysis | 0 | 25 | 0 |  |
+| D14.9 | Multiverse-replication of a named signature | 0 | 25 | 0 | survival |
+| D15.1 | Binding-pocket druggability scan | 0 | 25 | 0 |  |
+| D15.10 | Covalent-cysteine accessibility | 0 | 25 | 0 |  |
+| D15.2 | Drug-target docking model | 0 | 25 | 0 | drug_response |
+| D15.3 | Variant->structure destabilization (ESM/AF) | 0 | 25 | 0 | mutation |
+| D15.4 | Conformational-vulnerability scan | 0 | 25 | 0 |  |
+| D15.5 | Degrader (PROTAC) handle mapping | 0 | 25 | 0 |  |
+| D15.6 | Antigen surface-accessibility for immunotherapy | 0 | 25 | 0 |  |
+| D15.7 | Allosteric-hotspot MD mapping | 0 | 25 | 0 |  |
+| D15.8 | Fragment virtual screen | 0 | 25 | 0 | dependency, mutation |
+
+The JSON companion contains all 202 method rows with gates, routes, blockers, bound contrasts, and modality gaps.
+
+## Release Boundary
+
+- batch_or_platform_guard_receipts
+- downstream_envelope_binding_receipts
+- scientific_executor_release_ledger
+- per-unit null_falsifier_certificate_vectors

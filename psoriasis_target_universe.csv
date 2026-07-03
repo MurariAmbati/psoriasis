@@ -1,0 +1,8 @@
+claim,status,evidence,bound
+"Inflammatory up-signature (DEFB4A,S100s,PI3)",ROBUST,"validated both cohorts, padj<1e-50",largely SHARED with AD (r=0.88) - not PSO-specific
+Differentiation-TF silencing (GATA/FOX/TBX),ROBUST,validated both cohorts,weaker in AD; partially shared
+TEAD4 as inflammation-independent silencer,NOT REPLICATED,GSE54456 partial_r=-0.37 p<0.001,FLIPS to +0.44 in GSE121212; cohort-specific
+Target prioritization ranking,ROBUST,permutation p<0.001,"top hits are high-effect markers, not all druggable"
+TEAD4 druggability / docking,SUPPORTED,redock 1.0Å RMSD; leads -6.4/-7.1,leads weaker than optimized crystal chemotype (-9.2)
+De-repression axis (DNMT/EZH2/HDAC drugs),MECHANISTIC,"scar 77% persistent, dev-TF enh OR=2.21",no direct in-vitro reactivation shown; hypothesis
+GWAS integration,FIXED,"734 assoc, 350 genes, HLA/IL23R/NOD2",canonical loci mostly not in DE universe (immune vs skin)

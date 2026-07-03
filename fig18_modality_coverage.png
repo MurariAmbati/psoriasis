@@ -1,0 +1,75 @@
+# Psoriasis Deep-Dive — Comprehensive Novelty Audit & Translational Applications
+
+**Repository:** repression-os-v2 · disease pack MONDO_0005083_psoriasis
+**This report** answers two questions the earlier batches did not: *how novel is each discovery, really?* and *what can we use them for?* It also completes the remaining catalog tracks (protein/biologic interface, delivery/modality) and scales the analysis across all 29 disease packs.
+
+---
+
+## 1. Quantitative novelty audit — grounded in real prior art
+
+Every construct was scored against measurable prior art: PubMed co-occurrence counts for the *specific* claim, Open Targets psoriasis-association presence, and ClinicalTrials.gov coverage.
+
+**The honest verdict is more sober than the earlier "white space" framing.** Three findings reshaped the story:
+
+- **TEAD4 in psoriasis is NOT virgin territory.** Three PubMed papers already link TEAD4 to psoriatic keratinocytes — including a 2020 paper connecting TEAD4 to SERPINB3/4 (genes in our own inflammatory up-set) and a 2024 "reappraisal" centering TEAD4 in keratinocytes. TEAD degraders/PROTACs are an active field (~1,086 papers). → TEAD4 downgraded to **MEDIUM** novelty; the genuine contribution is the *differentiation-silencing framing* and the psoriasis-specific chemistry, not the target itself.
+- **The inflammatory signature (DEFB4/S100, 115 papers) and the 6-gene biomarker concept (322 papers) are confirmatory** — reproduced as positive controls, not claimed as novel.
+- **Genuinely HIGH novelty** concentrates in three places: the epigenetic-scar-as-relapse-substrate (keratinocyte framing is a minority view), rational de-repression therapy (novel *application* of approved DNMT/EZH2 inhibitors), and the cross-disease engine below.
+
+Distribution: 3 HIGH / 4 MEDIUM / 2 LOW.
+
+![Novelty landscape]({{artifact:art_dce6321f-a445-4efc-b8bb-0168a2018ad9}})
+
+---
+
+## 2. Cross-disease novelty engine — the scale-up (29 packs)
+
+To test whether the psoriasis mechanism *generalizes*, the differentiation-silencing + Hippo gene set was scored against all 29 committed disease packs using uniform Open Targets associations.
+
+**Decisive finding:** the Hippo/differentiation-silencing axis is a **carcinoma pathway**, not a shared inflammatory-disease mechanism. Carcinomas dominate (breast 1.28, digestive 1.26, prostate 1.01, colorectal 0.95); **psoriasis ranks near the bottom (0.25, Hippo component 0.00)**. Category means: carcinoma 0.96 ≫ hematologic 0.55 > autoimmune 0.39 > barrier-inflammatory 0.18 > neuro/metabolic 0.08.
+
+**What this means, honestly:** we did not discover a novel pan-disease mechanism. We identified an established oncogenic axis that is *underexplored in psoriasis specifically*. The novelty is **repositioning** — bringing cancer-pathway tool compounds and biology to inflammatory skin — and the engine itself is a reusable asset for the "apply to every disease" goal.
+
+![Cross-disease engine]({{artifact:art_8f78e969-8287-4442-a784-08226411d787}})
+
+---
+
+## 3. Protein/biologic track — the YAP-TEAD interface
+
+TEAD4 offers two druggable modes. Beyond the central palmitate pocket (where our 388-design small-molecule series binds), the **YAP protein-protein interface** was mapped from PDB 6SEN (TEAD4 + peptide, 1.65 Å): **21 interface residues, 8 core hotspots** (SER418, ASP272, TYR429, LYS297, ALA419, GLU263, HIS427, GLN269). This flat surface is the target for a stapled-peptide/biologic modality — an active but early field (20 PPI-inhibitor papers), untested in psoriasis.
+
+**Bound:** GPU de novo binder design (RFdiffusion/ProteinMPNN) was unavailable, so this is interface characterization + prior-art, not novel binder generation.
+
+![YAP-TEAD interface]({{artifact:art_1b49b4a3-ad67-4d39-a47e-7530b2e20839}})
+
+---
+
+## 4. Delivery/modality + full track coverage
+
+**Delivery advantage:** 9 of 10 top TEAD4 small-molecule leads are **topical-favorable** (MW<500, logP 1–3.5, low HBD) — ideal for skin-directed psoriasis therapy. The nucleoside de-repression agents (azacitidine/decitabine) are too hydrophilic for passive skin penetration and would need a delivery vehicle.
+
+**All 12 catalog tracks (A–L) addressed:** 9 DONE, 2 connector-substitutes (protein/biologic, biophysics — GPU deferred), 1 partial (single-cell — GPU deferred). GPU-gated methods were explicitly substituted with connector/CPU equivalents, never silently skipped.
+
+![Modality + coverage]({{artifact:art_41a5d6cc-1623-496d-bf76-3e78d0f537ca}})
+
+---
+
+## 5. What can we use these discoveries for?
+
+Full detail in the companion **PSORIASIS_APPLICATIONS.md**. Summary:
+
+| Discovery | Best use | Readiness | Hard bound |
+|---|---|---|---|
+| 6-gene panel | Diagnostic classifier | PoC | overfit gap; platform transfer |
+| Differentiation-silencing score | Relapse-risk marker | Hypothesis | no longitudinal test |
+| TEAD4 SM series (topical) | Therapeutic lead | Computational | starting points; causal role unproven |
+| De-repression (aza/deci) | Scar-reversal therapy | Mechanistic | no assay; not skin-penetrant |
+| YAP-TEAD interface | Biologic disruptor | Interface map | no binder designed |
+| Cross-disease engine | Repositioning platform | **Operational** | association-based |
+
+**Two most actionable:** synthesize the topical TEAD4 lead series (→ keratinocyte TEAD-reporter assay), and reuse the cross-disease engine on the next pack. **Two most important honest negatives:** TEAD4 is a known carcinoma pathway, and its psoriasis causal role did not replicate cross-cohort — these bounds are what make the remaining claims trustworthy.
+
+---
+
+## Honest-novelty bottom line
+
+The earlier batches framed TEAD4/Hippo as novel psoriasis white space. This audit corrects that: **the mechanism is established in cancer; the novelty is its application to psoriasis and the specific tools built here** (388-compound topical-favorable series, interface map, 5-cohort meta-signature, cross-disease engine). That is a narrower but defensible claim — and the reusable engine is the most transferable deliverable for the pan-disease program.

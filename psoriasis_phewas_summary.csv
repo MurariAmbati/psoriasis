@@ -1,0 +1,12 @@
+construct,status,evidence,bound
+5-cohort meta-signature,ROBUST,886 genes all-5 direction-concordant; 100/100 top genes sign-stable to leave-one-cohort-out,median I²=95% (cross-platform effect-magnitude heterogeneity; direction consistent)
+Differentiation-TF silencing,ROBUST,"GATA3 -1.44, FOXC1 -1.34, GATA6 -1.07 all sig across 5 cohorts/2 platforms",magnitude varies by platform; shared partially with atopic dermatitis
+TEAD4 differentiation/inflammation boundary,SUPPORTED (co-expression),"GSE30999 GRN: TEAD4 anti-corr differentiation (FOXA1 -0.52) + pos-corr inflammation (IL36G +0.63, CEBPB +0.68)",co-expression not causal; discovery partial-corr did NOT replicate cross-cohort (prior batch)
+TEAD4 as non-immune node,SUPPORTED (genetics),"PheWAS: TEAD4 top hits non-immune (varicose veins, height); 0 psoriasis trials",absence of immune PheWAS ≠ proof of differentiation role
+Causal MR of lead targets,LIMITED,only NOD2 had strong skin/blood cis-eQTL instrument (p=2.5e-44),8/10 targets lack cis-eQTL in available tissues; no LD-harmonized Wald MR performed
+PheWAS efficacy signal,ROBUST,"IL12B->Psoriasis mlogp=42.7, TNFAIP3 20.5, IFIH1 autoimmune (FinnGen R12)","gene-level (best-variant) PheWAS, not variant-specific MR"
+6-gene biomarker panel,SUPPORTED,"held-out AUROC 0.806 (GSE14905) / 0.987 (GSE30999), permutation p=0.0005",train resubstitution 1.00 (overfit gap); GSE14905 only 21 normals
+Repurposing rigor null,HONEST NEGATIVE,0/23 committed L1000 candidates survive empirical FDR<0.05,self-referential null (all reversing scores negative); no positive repurposing hit produced
+IntAct target expansion,MECHANISTIC,JAK1/STAT1/XIAP/TRIM27 bridge ≥2 seeds; TEAD4-YAP1 MI 0.93,"interaction evidence, not psoriasis-specific; keratin partners filtered as noise"
+De novo TEAD4 chemical series,SUPPORTED (starting points),388 novel PAINS-clean designs all docked; best -7.75 beats parent -7.05; 46 beat parent,complete 388/388 docked; ALL weaker than crystal -9.18; no MD/synthesis; single pose/scoring fn
+Trial white-space,ROBUST (descriptive),TEAD4/RORC/IFIH1 = 0 psoriasis trials vs IL17A 50,ClinicalTrials.gov coverage; intervention-name matching may miss trials
